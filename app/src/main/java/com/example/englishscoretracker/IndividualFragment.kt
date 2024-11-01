@@ -8,7 +8,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.Fragment
+import com.example.englishscoretracker.ui.theme.EnglishScoreTrackerTheme
 
 class IndividualFragment : Fragment() {
     override fun onCreateView(
@@ -30,3 +32,12 @@ fun IndividualScreen() {
         Text(text = "made feature/individual-fragment branch and IndividualFragment.")
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun IndividualScreenPreview() {
+    EnglishScoreTrackerTheme {
+        IndividualScreen()
+    }
+}
+
