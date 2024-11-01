@@ -27,6 +27,6 @@ class RecordFragment : Fragment() {
 @Composable
 fun RecordScreen() {
     Column {
-        Text(text = "記録画面です")
+        Text(text = "made feature/record-fragment branch.")
     }
 }
