@@ -123,7 +123,7 @@ private fun ListeningTextPreview() {
 }
 
 @Composable
-private fun SpeakingText(speakingTextText: String, modifier: Modifier = Modifier) {
+private fun SpeakingText(speakingText: String, modifier: Modifier = Modifier) {
     Text(
         text = "Speaking",
         modifier = modifier
@@ -135,5 +135,21 @@ private fun SpeakingText(speakingTextText: String, modifier: Modifier = Modifier
 private fun SpeakingTextPreview() {
     EnglishScoreTrackerTheme {
         SpeakingText("Speaking")
+    }
+}
+
+@Composable
+private fun MemoText(memoText: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Memo",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun MemoTextPreview() {
+    EnglishScoreTrackerTheme {
+        MemoText("Memo")
     }
 }
