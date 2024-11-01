@@ -121,3 +121,19 @@ private fun ListeningTextPreview() {
         ListeningText("Listening")
     }
 }
+
+@Composable
+private fun SpeakingText(speakingTextText: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Speaking",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SpeakingTextPreview() {
+    EnglishScoreTrackerTheme {
+        SpeakingText("Speaking")
+    }
+}
