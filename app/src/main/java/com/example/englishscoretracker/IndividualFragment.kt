@@ -86,6 +86,22 @@ private fun DayTextPreview() {
 }
 
 @Composable
+private fun DayUserEditedText(dayUserEditedString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "2024年11月1日",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun DayUserEditedTextPreview() {
+    EnglishScoreTrackerTheme {
+        DayUserEditedText("2024年11月1日")
+    }
+}
+
+@Composable
 private fun GradeText(gradeString: String, modifier: Modifier = Modifier) {
     Text(
         text = "受験級",
