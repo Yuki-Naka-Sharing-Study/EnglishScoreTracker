@@ -2,5 +2,5 @@
 <resources>
     <!-- ConfirmFragment -->
     <dimen name="no_record_text_font_size">28sp</dimen>
-    <dimen name="no_record_image_view">28sp</dimen>
+    <dimen name="no_record_image_view">80dp</dimen>
 </resources>
