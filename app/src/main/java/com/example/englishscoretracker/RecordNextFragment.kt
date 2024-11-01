@@ -230,3 +230,27 @@ private fun ListeningScoreInputFieldPreview() {
         ListeningScoreInputField()
     }
 }
+
+@Composable
+fun WritingScoreInputField() {
+    var number by remember { mutableStateOf("") }
+
+    OutlinedTextField(
+        value = number,
+        onValueChange = { newValue ->
+            if (newValue.all { it.isDigit() }) {
+                number = newValue
+            }
+        },
+        label = { Text("850") },
+        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number) // 数字入力キーボード
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun WritingScoreInputFieldPreview() {
+    EnglishScoreTrackerTheme {
+        WritingScoreInputField()
+    }
+}
