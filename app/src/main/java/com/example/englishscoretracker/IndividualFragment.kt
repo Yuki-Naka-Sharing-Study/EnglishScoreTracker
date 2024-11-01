@@ -52,6 +52,7 @@ fun IndividualScreen() {
             horizontalArrangement = Arrangement.End,
         ) {
             TrashIcon()
+            Spacer(modifier = Modifier.width(16.dp))
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -59,6 +60,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             DayText("")
             Spacer(modifier = Modifier.width(16.dp))
             DayUserEditedText("")
@@ -69,6 +71,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             GradeText("")
             Spacer(modifier = Modifier.width(16.dp))
             GradeUserEditedText("")
@@ -76,13 +79,19 @@ fun IndividualScreen() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        ScoreText("")
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            Spacer(modifier = Modifier.width(16.dp))
+            ScoreText("")
+        }
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             ReadingText("")
             Spacer(modifier = Modifier.width(16.dp))
             ReadingScoreText("")
@@ -93,6 +102,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             ListeningText("")
             Spacer(modifier = Modifier.width(16.dp))
             ListeningScoreText("")
@@ -103,6 +113,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             WritingText("")
             Spacer(modifier = Modifier.width(16.dp))
             WritingScoreText("")
@@ -113,6 +124,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             SpeakingText("")
             Spacer(modifier = Modifier.width(16.dp))
             SpeakingScoreText("")
@@ -123,6 +135,7 @@ fun IndividualScreen() {
         Row(
             horizontalArrangement = Arrangement.Start
         ) {
+            Spacer(modifier = Modifier.width(16.dp))
             MemoText("")
             Spacer(modifier = Modifier.width(16.dp))
             MemoUserEditedText("")
