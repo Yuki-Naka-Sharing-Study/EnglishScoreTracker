@@ -44,6 +44,7 @@ fun ConfirmScreen() {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             NoRecordText()
+            NoRecordDescriptionText()
         }
     }
 }
@@ -64,5 +65,22 @@ private fun NoRecordText(modifier: Modifier = Modifier) {
 private fun NoRecordTextPreview() {
     EnglishScoreTrackerTheme {
         NoRecordText()
+    }
+}
+
+@Composable
+private fun NoRecordDescriptionText(modifier: Modifier = Modifier) {
+    androidx.compose.material.Text(
+        text = stringResource(id = R.string.no_record_description),
+        fontWeight = FontWeight.Light,
+        color = androidx.compose.ui.graphics.Color.LightGray
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun NoRecordDescriptionTextPreview() {
+    EnglishScoreTrackerTheme {
+        NoRecordDescriptionText()
     }
 }

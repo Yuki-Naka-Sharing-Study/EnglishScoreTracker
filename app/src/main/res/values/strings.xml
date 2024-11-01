@@ -5,4 +5,5 @@
 
     <!-- ConfirmFragment -->
     <string name="no_record">まだ記録がありません。</string>
+    <string name="no_record_description">学習して記録を追加しましょう。</string>
 </resources>
