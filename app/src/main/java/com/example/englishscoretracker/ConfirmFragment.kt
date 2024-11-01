@@ -54,6 +54,14 @@ fun ConfirmScreen() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+private fun ConfirmScreenPreview() {
+    EnglishScoreTrackerTheme {
+        ConfirmScreen()
+    }
+}
+
 // 以下は「記録無し」のコード
 @Composable
 private fun NoRecordImageView(modifier: Modifier = Modifier) {
