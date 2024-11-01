@@ -12,4 +12,5 @@ val typeOfTest = listOf(
     TypeOfTest(0xFF388E3C.toInt(), "TOEIC SW"),
     TypeOfTest(0xFFFBC02D.toInt(), "TOEFL iBT"),
     TypeOfTest(0xFFF57C00.toInt(), "IELTS"),
+    TypeOfTest(0xFFFFFFFF.toInt(), "White"),
 )
