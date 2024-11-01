@@ -73,3 +73,19 @@ private fun GradeTextPreview() {
         GradeText("受験級")
     }
 }
+
+@Composable
+private fun ScoreText(scoreString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "スコア",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ScoreTextPreview() {
+    EnglishScoreTrackerTheme {
+        ScoreText("スコア")
+    }
+}
