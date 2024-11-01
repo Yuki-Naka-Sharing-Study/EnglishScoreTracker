@@ -5,12 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.Fragment
 import com.example.englishscoretracker.ui.theme.EnglishScoreTrackerTheme
@@ -173,5 +180,29 @@ private fun SaveButton(
 private fun SaveButtonPreview() {
     EnglishScoreTrackerTheme {
         SaveButton()
+    }
+}
+
+@Composable
+fun ReadingScoreInputField() {
+    var number by remember { mutableStateOf("") }
+
+    OutlinedTextField(
+        value = number,
+        onValueChange = { newValue ->
+            if (newValue.all { it.isDigit() }) {
+                number = newValue
+            }
+        },
+        label = { Text("850") },
+        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number) // 数字入力キーボード
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ReadingScoreInputFieldPreview() {
+    EnglishScoreTrackerTheme {
+        ReadingScoreInputField()
     }
 }
