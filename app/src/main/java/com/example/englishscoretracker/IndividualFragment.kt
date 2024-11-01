@@ -217,3 +217,19 @@ private fun SpeakingScoreTextPreview() {
         SpeakingScoreText("850")
     }
 }
+
+@Composable
+private fun MemoText(memoString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Memo",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun MemoTextPreview() {
+    EnglishScoreTrackerTheme {
+        MemoText("Memo")
+    }
+}
