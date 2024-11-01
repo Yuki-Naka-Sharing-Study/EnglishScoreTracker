@@ -137,3 +137,19 @@ private fun ListeningTextPreview() {
         ListeningText("Listening")
     }
 }
+
+@Composable
+private fun ListeningScoreText(listeningScoreString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "850",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ListeningScoreTextPreview() {
+    EnglishScoreTrackerTheme {
+        ListeningScoreText("850")
+    }
+}
