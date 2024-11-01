@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("develop branch")
+                    Greeting("feature/bottom_nav branch")
                 }
             }
         }
@@ -41,6 +41,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     EnglishScoreTrackerTheme {
-        Greeting("develop branch")
+        Greeting("feature/bottom_nav branch")
     }
 }
