@@ -27,6 +27,6 @@ class SettingFragment : Fragment() {
 @Composable
 fun SettingScreen() {
     Column {
-        Text(text = "設定画面です")
+        Text(text = "made feature/setting-view branch.")
     }
 }
