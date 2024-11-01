@@ -4,14 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -43,9 +47,30 @@ fun ConfirmScreen() {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
+            NoRecordImageView()
             NoRecordText()
             NoRecordDescriptionText()
         }
+    }
+}
+
+// 以下は「記録無し」のコード
+@Composable
+private fun NoRecordImageView(modifier: Modifier = Modifier) {
+    Image(
+        painter = painterResource(id = R.drawable.no_record),
+        contentDescription = stringResource(id = R.string.description_of_the_image),
+        modifier = modifier
+            .size((dimensionResource(id = R.dimen.no_record_image_view)))
+            .aspectRatio(1f)
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun NoRecordImageViewPreview() {
+    EnglishScoreTrackerTheme {
+        NoRecordImageView(modifier = Modifier)
     }
 }
 

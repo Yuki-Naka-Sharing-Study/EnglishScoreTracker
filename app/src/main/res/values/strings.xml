@@ -1,7 +1,9 @@
 <resources>
+    <!-- 共通 -->
     <string name="app_name">EnglishScoreTracker</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_of_the_image">description of the image</string>
 
     <!-- ConfirmFragment -->
     <string name="no_record">まだ記録がありません。</string>
