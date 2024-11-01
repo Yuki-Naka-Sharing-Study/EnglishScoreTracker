@@ -118,6 +118,22 @@ private fun GradeTextPreview() {
 }
 
 @Composable
+private fun GradeUserEditedText(gradeUserEditedString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "準一級",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun GradeUserEditedTextPreview() {
+    EnglishScoreTrackerTheme {
+        GradeUserEditedText("準一級")
+    }
+}
+
+@Composable
 private fun ScoreText(scoreString: String, modifier: Modifier = Modifier) {
     Text(
         text = "スコア",
