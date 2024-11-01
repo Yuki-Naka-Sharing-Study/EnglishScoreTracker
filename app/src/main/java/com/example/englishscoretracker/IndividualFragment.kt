@@ -4,8 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Icon
@@ -13,6 +19,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.tooling.preview.Preview
@@ -36,8 +43,90 @@ class IndividualFragment : Fragment() {
 
 @Composable
 fun IndividualScreen() {
-    Column {
-        Text(text = "made feature/individual-fragment branch and IndividualFragment.")
+    Column(
+
+    ) {
+        Row(
+            modifier = Modifier.
+                fillMaxWidth(),
+            horizontalArrangement = Arrangement.End,
+        ) {
+            TrashIcon()
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            DayText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            DayUserEditedText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            GradeText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            GradeUserEditedText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        ScoreText("")
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            ReadingText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            ReadingScoreText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            ListeningText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            ListeningScoreText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            WritingText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            WritingScoreText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            SpeakingText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            SpeakingScoreText("")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.Start
+        ) {
+            MemoText("")
+            Spacer(modifier = Modifier.width(16.dp))
+            MemoUserEditedText("")
+        }
     }
 }
 
