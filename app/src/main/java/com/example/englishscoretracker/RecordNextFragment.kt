@@ -73,3 +73,19 @@ private fun SelectGradeTextPreview() {
         SelectGradeText("受験級を選択")
     }
 }
+
+@Composable
+private fun EnterScoreText(grade: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "スコアを記入",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun EnterScoreTextPreview() {
+    EnglishScoreTrackerTheme {
+        EnterScoreText("スコアを記入")
+    }
+}
