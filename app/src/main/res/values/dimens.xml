@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 共通 -->
+    <dimen name="space_16">16dp</dimen>
+
     <!-- ConfirmFragment -->
     <dimen name="no_record_text_font_size">28sp</dimen>
     <dimen name="no_record_image_view">80dp</dimen>
