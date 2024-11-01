@@ -15,7 +15,9 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import androidx.fragment.app.Fragment
 import com.example.englishscoretracker.ui.theme.EnglishScoreTrackerTheme
 
@@ -65,5 +67,24 @@ private fun NoRecordImageView(modifier: Modifier = Modifier) {
 private fun NoRecordImageViewPreview() {
     EnglishScoreTrackerTheme {
         NoRecordImageView(modifier = Modifier)
+    }
+}
+
+@Composable
+private fun NoRecordText(modifier: Modifier = Modifier) {
+    androidx.compose.material.Text(
+        text = stringResource(id = R.string.no_record),
+        fontWeight = FontWeight.Bold,
+        fontSize = dimensionResource(
+            id = R.dimen.no_record_text_font_size
+        ).value.sp,
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun NoRecordTextPreview() {
+    EnglishScoreTrackerTheme {
+        NoRecordText()
     }
 }
