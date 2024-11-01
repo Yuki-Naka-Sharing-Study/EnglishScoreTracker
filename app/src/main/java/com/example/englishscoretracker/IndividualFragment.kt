@@ -57,3 +57,19 @@ private fun DayTextPreview() {
         DayText("受験日")
     }
 }
+
+@Composable
+private fun GradeText(gradeString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "受験級",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun GradeTextPreview() {
+    EnglishScoreTrackerTheme {
+        GradeText("受験級")
+    }
+}
