@@ -233,3 +233,19 @@ private fun MemoTextPreview() {
         MemoText("Memo")
     }
 }
+
+@Composable
+private fun MemoUserEditedText(memoUserEditedString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "I got perfect score!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun MemoUserEditedTextPreview() {
+    EnglishScoreTrackerTheme {
+        MemoUserEditedText("I got perfect score!")
+    }
+}
