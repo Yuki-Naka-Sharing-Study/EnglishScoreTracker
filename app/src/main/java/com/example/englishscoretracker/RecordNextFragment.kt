@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -151,5 +153,25 @@ private fun MemoText(memoText: String, modifier: Modifier = Modifier) {
 private fun MemoTextPreview() {
     EnglishScoreTrackerTheme {
         MemoText("Memo")
+    }
+}
+
+@Composable
+private fun SaveButton(
+    onClick: () -> Unit = {}
+) {
+    Button(
+        onClick = onClick,
+        colors = ButtonDefaults.buttonColors(androidx.compose.ui.graphics.Color.Blue)
+    ) {
+        Text("記録する")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SaveButtonPreview() {
+    EnglishScoreTrackerTheme {
+        SaveButton()
     }
 }
