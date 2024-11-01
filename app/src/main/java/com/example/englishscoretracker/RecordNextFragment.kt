@@ -89,3 +89,19 @@ private fun EnterScoreTextPreview() {
         EnterScoreText("スコアを記入")
     }
 }
+
+@Composable
+private fun ReadingText(readingText: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Reading",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ReadingTextPreview() {
+    EnglishScoreTrackerTheme {
+        ReadingText("Reading")
+    }
+}
