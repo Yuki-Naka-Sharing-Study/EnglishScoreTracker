@@ -8,7 +8,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.Fragment
+import com.example.englishscoretracker.ui.theme.EnglishScoreTrackerTheme
 
 class ConfirmFragment : Fragment() {
     override fun onCreateView(
@@ -27,6 +29,14 @@ class ConfirmFragment : Fragment() {
 @Composable
 fun ConfirmScreen() {
     Column {
-        Text(text = "記録確認画面です")
+        Text(text = "made feature/confirm-fragment branch.")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ConfirmScreenPreview() {
+    EnglishScoreTrackerTheme {
+        ConfirmScreen()
     }
 }
