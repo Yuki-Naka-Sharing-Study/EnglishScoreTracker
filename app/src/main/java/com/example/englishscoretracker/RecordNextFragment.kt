@@ -278,3 +278,27 @@ private fun SpeakingScoreInputFieldPreview() {
         SpeakingScoreInputField()
     }
 }
+
+@Composable
+fun MemoTextField() {
+    var text by remember { mutableStateOf("") }
+
+    OutlinedTextField(
+        value = text,
+        onValueChange = { newText ->
+            text = newText
+        },
+        label = { Text("MEMO") },
+        placeholder = { Text("") },
+        maxLines = 5,
+        singleLine = false
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun MemoTextFieldPreview() {
+    EnglishScoreTrackerTheme {
+        MemoTextField()
+    }
+}
