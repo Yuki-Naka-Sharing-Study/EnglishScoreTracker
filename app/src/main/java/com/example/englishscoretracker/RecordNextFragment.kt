@@ -52,8 +52,24 @@ private fun SelectDayText(day: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-private fun SSelectDayTextPreview() {
+private fun SelectDayTextPreview() {
     EnglishScoreTrackerTheme {
         SelectDayText("受験日を選択")
+    }
+}
+
+@Composable
+private fun SelectGradeText(grade: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "受験級を選択",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SelectGradeTextPreview() {
+    EnglishScoreTrackerTheme {
+        SelectGradeText("受験級を選択")
     }
 }
