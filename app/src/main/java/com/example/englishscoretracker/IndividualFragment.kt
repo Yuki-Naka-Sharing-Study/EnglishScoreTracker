@@ -201,3 +201,19 @@ private fun SpeakingTextPreview() {
         SpeakingText("Speaking")
     }
 }
+
+@Composable
+private fun SpeakingScoreText(speakingScoreString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "850",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SpeakingScoreTextPreview() {
+    EnglishScoreTrackerTheme {
+        SpeakingScoreText("850")
+    }
+}
