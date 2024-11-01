@@ -153,3 +153,19 @@ private fun ListeningScoreTextPreview() {
         ListeningScoreText("850")
     }
 }
+
+@Composable
+private fun WritingText(writingString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Writing",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun WritingTextPreview() {
+    EnglishScoreTrackerTheme {
+        WritingText("Writing")
+    }
+}
