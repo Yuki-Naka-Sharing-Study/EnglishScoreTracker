@@ -5,11 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import com.example.englishscoretracker.ui.theme.EnglishScoreTrackerTheme
 
@@ -39,6 +46,26 @@ fun IndividualScreen() {
 fun IndividualScreenPreview() {
     EnglishScoreTrackerTheme {
         IndividualScreen()
+    }
+}
+
+@Composable
+fun TrashIcon() {
+    IconButton(onClick = {}) {
+        Icon(
+            imageVector = Icons.Filled.Delete,
+            contentDescription = "ゴミ箱アイコン",
+            modifier = Modifier.size(24.dp),
+            tint = MaterialTheme.colorScheme.primary
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun TrashIconPreview() {
+    EnglishScoreTrackerTheme {
+        TrashIcon()
     }
 }
 
