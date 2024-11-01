@@ -27,6 +27,6 @@ class ConfirmFragment : Fragment() {
 @Composable
 fun ConfirmScreen() {
     Column {
-        Text(text = "記録確認画面です")
+        Text(text = "NO DATA")
     }
 }
