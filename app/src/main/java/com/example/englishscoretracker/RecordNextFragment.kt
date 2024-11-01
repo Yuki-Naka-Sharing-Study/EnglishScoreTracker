@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.Fragment
@@ -38,5 +39,21 @@ fun RecordNextScreen() {
 fun RecordNextScreenPreview() {
     EnglishScoreTrackerTheme {
         RecordNextScreen()
+    }
+}
+
+@Composable
+private fun SelectDayText(day: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "受験日を選択",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun SSelectDayTextPreview() {
+    EnglishScoreTrackerTheme {
+        SelectDayText("受験日を選択")
     }
 }
