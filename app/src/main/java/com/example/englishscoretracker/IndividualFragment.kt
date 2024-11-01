@@ -89,3 +89,19 @@ private fun ScoreTextPreview() {
         ScoreText("スコア")
     }
 }
+
+@Composable
+private fun ReadingText(readingString: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Reading",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ReadingTextPreview() {
+    EnglishScoreTrackerTheme {
+        ReadingText("Reading")
+    }
+}
