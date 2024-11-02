@@ -50,6 +50,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.mpandroidchart)
     implementation(libs.androidx.material)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material3.android)

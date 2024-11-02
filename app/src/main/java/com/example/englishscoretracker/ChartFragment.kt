@@ -41,18 +41,21 @@ class ChartFragment : Fragment() {
 @Composable
 fun ChartScreen() {
     // 以下は「記録無し」のコード
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            NoRecordImageView()
-            NoRecordText()
-            NoRecordDescriptionText()
-        }
-    }
+//    Box(
+//        modifier = Modifier.fillMaxSize(),
+//        contentAlignment = Alignment.Center
+//    ) {
+//        Column(
+//            horizontalAlignment = Alignment.CenterHorizontally,
+//        ) {
+//            NoRecordImageView()
+//            NoRecordText()
+//            NoRecordDescriptionText()
+//        }
+//    }
+
+    // 以下は「記録あり」のコード (Chartで記録を表示。)
+
 }
 
 @Preview(showBackground = true)
@@ -118,3 +121,5 @@ private fun NoRecordDescriptionTextPreview() {
         NoRecordDescriptionText()
     }
 }
+
+// 以下は「記録あり」のコード
